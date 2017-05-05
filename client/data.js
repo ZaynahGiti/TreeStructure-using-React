@@ -8,13 +8,13 @@ const generate = (n, f) => {
 }
 
 export const data = {
-  text: 'hello',
-  number: '123',
+  text: 'awesome Node',
+  number: '999',
   object: {
-    key1: 'value1',
-    array1: generate(5),
+    key1: 'keyValue',
+    array1: generate(2),
     object1: {
-      text: 'hi'
+      text: 'Test'
     }
   },
   arrayOfObjects: generate(2, (i) => { return { x: i, y: i*i } }),
@@ -24,8 +24,8 @@ export const data = {
       y: generate(2, (i) => { return { x: 'value'+i, y: i*i*i } })
     }
   }),
-  largeArray: generate(1000, function(i){
-    //return i;
+  largeArray: generate(5, function(i){
+ 
     return {
       x: i,
       y: 2*i
